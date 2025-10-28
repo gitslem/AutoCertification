@@ -147,8 +147,6 @@ npx hardhat test
 - 🔗 Future-ready architecture built to scale for **Ethereum Mainnet** deployment.
 
 - Clone. Learn. Build. by SLM
--
--
--
+
    MIT LICENSE.
 
