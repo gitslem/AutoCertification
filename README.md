@@ -4,9 +4,6 @@
 
 AutoCertify is a blockchain-powered, decentralized vehicle lifecycle tracker that utilizes Ethereum smart contracts and NFTs to ensure transparency, trust, and tamper-proof vehicle history records. Designed as part of a capstone project, this platform reimagines how vehicle ownership, crash history, and service data can be recorded and verified.
 
-> ✅ **Watch Project Demo:** [Click to Watch the Explanation Video](https://youtu.be/aMxsHaAnWQI) (By Amir Reza Falahnezhad)
-
----
 
 ## 📌 Table of Contents
 
@@ -149,14 +146,9 @@ npx hardhat test
 
 - 🔗 Future-ready architecture built to scale for **Ethereum Mainnet** deployment.
 
----
-
-## Contributors
-
-<table>
-  <tbody>
-  <td align="center" valign="top" width="14.28%"><a href="https://github.com/amirrezaflh1402"><img src="https://github.com/amirrezaflh1402.png?v=3?s=100" width="100px;" alt="Amir Reza Falahnezhad"/><br /><sub><b>Amir Reza Falahnezhad</b></sub></a><br /><p>Web Developer</p></td>
-    </tr>
-      </tbody>
-</table>
+- Clone. Learn. Build. by SLM
+-
+-
+-
+   MIT LICENSE.
 
