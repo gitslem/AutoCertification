@@ -1,0 +1,959 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "nftAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "date",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "location",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "damageType",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "internalType": "bool",
+        "name": "repaired",
+        "type": "bool"
+      }
+    ],
+    "name": "addCrashRecord",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "mileage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "timestamp",
+        "type": "string"
+      }
+    ],
+    "name": "addMileageRecord",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "date",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "serviceType",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      }
+    ],
+    "name": "addServiceRecord",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allVINs",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllVehicles",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "vin",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "currentOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "ownerHistory",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "ownershipTimestamps",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "mileageRecords",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "mileageTimestamps",
+            "type": "string[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "date",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "location",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "damageType",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+              },
+              {
+                "internalType": "bool",
+                "name": "repaired",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct VehicleRegistry.CrashRecord[]",
+            "name": "crashHistory",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "date",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "serviceType",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct VehicleRegistry.ServiceRecord[]",
+            "name": "serviceHistory",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "string",
+            "name": "engineType",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "drivetrain",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "transmission",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "trimLevel",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "exteriorColor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "interiorColor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "manufacturer",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "productionPlant",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "modelYear",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "bodyStyle",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "fuelType",
+            "type": "string"
+          },
+          {
+            "internalType": "bool",
+            "name": "available",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum VehicleRegistry.ShipmentStatus",
+            "name": "shipmentStatus",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct VehicleRegistry.Vehicle[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      }
+    ],
+    "name": "getMileageHistory",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "",
+        "type": "string[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      }
+    ],
+    "name": "getOwnerHistory",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      }
+    ],
+    "name": "markAsAvailable",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "engineType",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "drivetrain",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "transmission",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "trimLevel",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "exteriorColor",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "interiorColor",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "productionPlant",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "modelYear",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "bodyStyle",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "fuelType",
+        "type": "string"
+      }
+    ],
+    "name": "registerVehicle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      }
+    ],
+    "name": "searchVehicle",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "vin",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "currentOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "ownerHistory",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "ownershipTimestamps",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "mileageRecords",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "mileageTimestamps",
+            "type": "string[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "date",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "location",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "damageType",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+              },
+              {
+                "internalType": "bool",
+                "name": "repaired",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct VehicleRegistry.CrashRecord[]",
+            "name": "crashHistory",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "date",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "serviceType",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct VehicleRegistry.ServiceRecord[]",
+            "name": "serviceHistory",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "string",
+            "name": "engineType",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "drivetrain",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "transmission",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "trimLevel",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "exteriorColor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "interiorColor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "manufacturer",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "productionPlant",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "modelYear",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "bodyStyle",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "fuelType",
+            "type": "string"
+          },
+          {
+            "internalType": "bool",
+            "name": "available",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum VehicleRegistry.ShipmentStatus",
+            "name": "shipmentStatus",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct VehicleRegistry.Vehicle",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "to",
+        "type": "address"
+      }
+    ],
+    "name": "transferVehicle",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      },
+      {
+        "internalType": "enum VehicleRegistry.ShipmentStatus",
+        "name": "status",
+        "type": "uint8"
+      }
+    ],
+    "name": "updateShipmentStatus",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      },
+      {
+        "internalType": "bool",
+        "name": "isAvailable",
+        "type": "bool"
+      }
+    ],
+    "name": "updateVehicleAvailability",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "vehicleNFT",
+    "outputs": [
+      {
+        "internalType": "contract VehicleNFT",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "name": "vehicles",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "currentOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "engineType",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "drivetrain",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "transmission",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "trimLevel",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "exteriorColor",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "interiorColor",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "productionPlant",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "modelYear",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "bodyStyle",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "fuelType",
+        "type": "string"
+      },
+      {
+        "internalType": "bool",
+        "name": "available",
+        "type": "bool"
+      },
+      {
+        "internalType": "enum VehicleRegistry.ShipmentStatus",
+        "name": "shipmentStatus",
+        "type": "uint8"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      }
+    ],
+    "name": "viewBasicReport",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "manufacturer",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "model",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "modelYear",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "color",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "fuelType",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "vinOut",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "vin",
+        "type": "string"
+      }
+    ],
+    "name": "viewFullReport",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "vin",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "currentOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "address[]",
+            "name": "ownerHistory",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "ownershipTimestamps",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "mileageRecords",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "mileageTimestamps",
+            "type": "string[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "date",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "location",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "damageType",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+              },
+              {
+                "internalType": "bool",
+                "name": "repaired",
+                "type": "bool"
+              }
+            ],
+            "internalType": "struct VehicleRegistry.CrashRecord[]",
+            "name": "crashHistory",
+            "type": "tuple[]"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "date",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "serviceType",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct VehicleRegistry.ServiceRecord[]",
+            "name": "serviceHistory",
+            "type": "tuple[]"
+          },
+          {
+            "internalType": "string",
+            "name": "engineType",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "drivetrain",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "transmission",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "trimLevel",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "exteriorColor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "interiorColor",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "manufacturer",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "productionPlant",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "modelYear",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "bodyStyle",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "fuelType",
+            "type": "string"
+          },
+          {
+            "internalType": "bool",
+            "name": "available",
+            "type": "bool"
+          },
+          {
+            "internalType": "enum VehicleRegistry.ShipmentStatus",
+            "name": "shipmentStatus",
+            "type": "uint8"
+          }
+        ],
+        "internalType": "struct VehicleRegistry.Vehicle",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
