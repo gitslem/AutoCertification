@@ -155,9 +155,7 @@ npx hardhat test
 
 <table>
   <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://vandit-shah.me"><img src="https://github.com/shahvandit8.png?v=3?s=100" width="100px;" alt="Vandit H. Shah"/><br /><sub><b>Vandit H. Shah</b></sub></a><br /><p>Software Developer</p></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/amirrezaflh1402"><img src="https://github.com/amirrezaflh1402.png?v=3?s=100" width="100px;" alt="Amir Reza Falahnezhad"/><br /><sub><b>Amir Reza Falahnezhad</b></sub></a><br /><p>Web Developer</p></td>
+  <td align="center" valign="top" width="14.28%"><a href="https://github.com/amirrezaflh1402"><img src="https://github.com/amirrezaflh1402.png?v=3?s=100" width="100px;" alt="Amir Reza Falahnezhad"/><br /><sub><b>Amir Reza Falahnezhad</b></sub></a><br /><p>Web Developer</p></td>
     </tr>
       </tbody>
 </table>
